@@ -1,0 +1,133 @@
+%!TEX root = ../trabajo.tex
+\capitulo{El Problema}
+
+\seccion{Planteamiento del Problema}
+
+El rápido avance de la tecnología móvil ha cambiado la manera en que las personas se comunican, buscan información, o conducen sus negocios y asuntos diarios  \cite[p. 411]{jailani2015usability}.  Según \citet[p. 9]{VisionMobile2014},  la economía mundial de aplicaciones en el año 2013 fue de un valor de \$ 68 mil millones de dólares y se estima su crecimiento a unos \$ 143 mil millones en el año 2016, lo que representa un crecimiento de 210,3\% en tres años.  Este crecimiento en el mercado se debe principalmente al uso cotidiano de los dispositivos móviles, lo que ha conducido a demandas más altas en cuanto a calidad y estabilidad de productos. Además, este significativo crecimiento ha dado lugar a un aumento en la importancia de una mejor interacción entre el usuario y la tecnología. Sin embargo, las tendencias móviles suelen cambiar rápido y hacen que los productos duren un corto período de tiempo \cite[p.16-24]{Dutt2012experience}.\\
+\\
+El desarrollo de aplicaciones móviles según \citet[p. 379]{wasserman2010software}, es similar al empleado en ingeniería de software para otros tipos de aplicaciones embebidas; entre los problemas comunes se incluyen la integración con el hardware del dispositivo, así como los problemas tradicionales de seguridad, rendimiento, fiabilidad y las limitaciones de almacenamiento. No obstante, las aplicaciones móviles presentan requisitos adicionales que no se encuentran comúnmente en las aplicaciones de software tradicional \cite{wasserman2010software}, tales como:  
+\\
+\begin{viñetas}
+\item Compartir elementos comunes de interfaz de usuario con otras aplicaciones, utilizando el desarrollado externamente por las directrices de interfaz de usuario.
+\item Posible interacción con otras aplicaciones.
+\item Manipulación de sensores.
+\item Nuevos problemas de seguridad asociados a ataques de malware (relacionadas a código abierto).
+\item Posible uso de servicios web (Web Services).
+\item Requerimientos de multi-plataforma de hardware y multi-versionamiento de software.
+\item Mayor complejidad en las pruebas de software (testing).
+\item Análisis de consumo de energía asociado al uso de hardware adicional para el funcionamiento de la aplicación.
+\\
+\end{viñetas}
+A lo anterior se suma, el hecho que los tiempos y complejidad de estos atributos no suelen ser precisos y generalmente están acompañados de una incertidumbre asociada a la complejidad e innovación del proyecto.  \citet[pp. 7-8]{bergvall2013future} indican que los nuevos tipos de aplicaciones desarrolladas hoy en día, junto con el  mercado actual, han creado nuevos problemas y retos para los desarrolladores, tal es el caso del desarrollo de aplicaciones móviles que deben destacar en un mercado competitivo de ofertas múltiples y a lo que debe agregarse la necesidad de realizar desarrollos en períodos más cortos, debido a la rápida obsolescencia de la tecnología, lo que determina la poca factibilidad de los desarrollos prolongados. \\
+\\
+Tomando en cuenta que las aplicaciones móviles pueden considerarse como productos recientes en el área de tecnología de la información y que en general el desarrollo de nuevos productos y servicios resulta costoso, consume tiempo y es arriesgado, las empresas deben hacer elecciones difíciles sobre cuáles proyectos merecen la inversión \cite[p. 131]{schilling2008direccion};  por esto, gran parte de los proyectos de desarrollo requieren de la evaluación de una cantidad de  información cualitativa significativa, y donde la gran mayoría de empresas apliquen alguna forma de valoración cualitativa para los proyectos potenciales \cite[p. 139]{schilling2008direccion}.  La selección entre alternativas se hace difícil, principalmente por dos factores: la incertidumbre y la imprecisión \cite[p. 3]{maccrimmon1968decisionmaking}; esto se hace evidente al comparar diferentes métodos en cuanto a su conveniencia e idoneidad en un problema de decisión. \citet[p. 26-27]{albar2013investigation} presenta diversos modelos para la toma de decisiones con sus respectivas áreas de aplicación, tal como se aprecia en el \refcuadro{tablaModeloDM}. \\
+\\
+Entre las categorías de modelos para la toma de decisiones,  la multicriterio (``Multiple Criteria Decision-Making'', MCDM) ha sido ampliamente utilizada en la evaluación, selección o clasificación de un conjunto finito de alternativas de decisión que se caracteriza por múltiples criterios contradictorios \cite[]{hwang2012multiple}.  Dada la complejidad creciente del ambiente socioeconómico, el cual hace que cada vez sea menos posible que un solo decisor pueda considerar todos los aspectos relevantes de un problema \cite[ p. 146]{yue2011extended} es importante considerar la toma de decisiones en grupo.  Tal como afirma \citet[ p. 3234]{mousavi2013hierarchical}, un problema de selección de idea para un nuevo producto requiere de múltiples perspectivas de diferentes expertos, tales como ingenieros de investigación y desarrollo (``Research and Development'', R\&D), personal de mercadeo, y gerentes de ventas.  En tal situación, las decisiones se realizan en grupo, así mismo, indican que la toma de decisiones en grupo (``Group Decision Making'', GDM) es el proceso de realizar un juicio basado en la opinión de varios expertos,  donde la combinación de toma de decisiones con múltiples atributos y la toma de decisiones en grupo han probado ser muy efectivas en el aumento del nivel de satisfacción global, entre el grupo sobre la decisión final, y particularmente en problemas de evaluación y selección.\\
+\begin{cuadro}[titulo = Categorías de modelos para la toma de decisiones, etiqueta = tablaModeloDM]{| p{2.2cm} | p{6cm}  | p{5cm} |}
+    \hline
+	\textbf{Método} & \textbf{Enfoque del método} & \textbf{Área de Aplicación}  \\ \hline
+    \textbf{Multicriterio} 
+    & 
+   La evaluación de alternativas con respecto a múltiples criterios basados en la preferencia de los decisores. 
+    &
+    El proyecto y su atributo están claramente definidos y se conocen las preferencias de los tomadores de decisiones. \\ \hline
+    \textbf{Analogías} 
+    & 
+    Comparación de los proyectos actuales con los datos históricos de productos similares y la búsqueda de una solución o alternativa óptima con relación a algunas funciones objetivo. 
+    &
+   El proyecto a evaluar tiene analogía con los proyectos anteriores o han sido formulados en un modelo de programación matemático.
+     \\ \hline
+    \textbf{Modelos  Económicos} 
+    & 
+    Basado en la previsión de los resultados financieros.
+    &
+   Es conocido del proyecto la oportunidad de mercado y su estructura de costos.
+     \\ \hline
+     \textbf{Árbol de Decisiones} 
+    & 
+    La evaluación de alternativas bajo diferentes escenarios, de los cuales se conoce su probabilidad, con base a un criterio único (típicamente payoff).
+    &
+    Tanto el proyecto, las posibles alternativas, y su probabilidad se conocen muy bien
+     \\ \hline
+    \textbf{Heurísticas} 
+    & 
+    Uso de conocimiento general también conocidas como "reglas del pulgar" para resolver los problemas.
+    &
+	Los proyectos disponen de información  limitada; decisiones bajo presión de tiempo
+     \\ \hline
+\end{cuadro}
+\\
+\fuentecuadro{3}{ \citet{albar2013investigation}}
+\\
+De acuerdo a \citet[pp. 132-133]{lin2004fuzzy}, se han elaborado diversos estudios para ayudar a los gerentes a tomar mejores decisiones de selección, y se han desarrollado técnicas para la selección de ideas con el propósito de generar nuevos productos, entre las que se pueden considerar: ponderación de pesos, proceso analítico jerárquico (``Analytic Hierarchy Process'', AHP), y los modelos de regresión para la selección. Sin embargo, el uso de estas técnicas de calificación no suelen ser muy efectivas, debido a que no toman en cuenta la incertidumbre asociada a la asignación de relación de correspondencia entre el juicio de una persona y un número, porque el juicio, la selección y la preferencia subjetiva de los evaluadores tienen una influencia significativa en tales métodos.\\
+\\
+Lin y Chen señalan que los enfoques de evaluación convencionales de ideas no toman en cuenta la existencia de información compleja, vaga o incompleta, y proponen la aplicación de la lógica difusa para ayudar a que los gerentes tomen mejores decisiones. Por ejemplo \citet{saeida2015fuzzy} señalan que identificando las dimensiones de calidad de servicio se puede mejorar el nivel de los servicios prestados por una variedad de aerolíneas haciendo uso de un método para toma de decisiones difusas, puesto que la mayor parte de los criterios de calidad de servicio son descriptivos y se ponderan utilizando expresiones lingüísticas. Por lo tanto, la evaluación de las percepciones y expectativas de los clientes en cuanto a calidad de servicio usando métodos no difusos ignora la ambigüedad que existe en los juicios que realizan las personas.\\
+\\
+La teoría de conjuntos difusos \cite[]{zadeh1965fuzzy} da inicio a la lógica difusa la cual describe el pensamiento y razonamiento humano con un marco matemático \cite[]{Lameda2003fuzzy}, siendo ésta utilizada para cubrir la imprecisión inherente a la naturaleza del problema de selección de proyectos. Por ejemplo, \citet{huang2008fuzzy}	 presentaron un método de proceso analítico jerárquico borroso y utilizaron una matriz nítida para evaluar los juicios subjetivos de expertos; también \citet{bhattacharyya2011fuzzyRD} desarrollaron un enfoque de programación multiobjetivo difusa para facilitar la toma de decisiones en la selección de proyectos de R\&D. \citet{yager2014multicriteria} muestra la toma de decisiones multicriterio en medidas difusas para capturar información sobre las importancias y las relaciones entre los criterios; presentando tres medidas particularmente útiles para estos problemas  de decisiones multicriterio, las medidas  aditivas, de cardinalidad, y de posibilidad.\\ 
+\\
+Considerando la lógica difusa y el proceso de evaluación de criterios para la toma decisiones, a continuación se proporciona una relación de trabajos publicados en los últimos tres años relacionados con la temática. 
+
+\begin{cuadro}[titulo = Trabajos relacionados publicados en los últimos tres años, etiqueta = tablaTrabajosRecientes]{| p{3cm} | p{11cm} |}
+\hline
+\textbf{Trabajo:} & \textbf{(2015)} A Fuzzy Multicriteria Decision Making Model for Restaurant Menu Ranking. \\
+Autor(es): & Mary Tom, Santoso Wibowo and Srimannarayana Grandhi.  \\
+Área de aplicación: & Clasificación de menús para restaurantes \\
+Técnica: & \textbf{Medidas de similitud difusas} \\
+\textbf{Trabajo:} & \textbf{(2015)} Development of Fuzzy TOPSIS-Based Software Tool (FTST). \\
+Autor(es): & Fadlelmoula M. Baloul, Ahmed A. Al-Amayrah and D.R Prince Williams \\
+Área de aplicación: & Herramienta para clasificación basada en TOPSIS  difuso (FTST). \\
+Técnica: & \textbf{TOPSIS difuso} \\
+\textbf{Trabajo:} & \textbf{(2014)} Evaluating R\&D Projects as Investments by Using an Overall Ranking From Four New Fuzzy Similarity Measure-Based TOPSIS Variants \\
+Autor(es): & Mikael Collan and Pasi Luukka \\
+Área de aplicación: & Clasificación y evaluación de proyectos de R\&D como inversiones.  \\
+Técnica: & Aplicación de \textbf{medidas de similitud difusa} como variante de TOPSIS \\
+\textbf{Trabajo:} & \textbf{(2013)} Development and Validation of Fuzzy Multicriteria Decision Making Models \\
+Autor(es): & Yu-Liang Kuo \\
+Área de aplicación: & Modelos de Toma de Decisiones Multicriterio Difusas \\
+Técnica: & Uso de \textbf{\α-corte} para la defusificación y en la agregación uso de \textbf{SAW y TOPSIS} \\
+\textbf{Trabajo:} & \textbf{(2013)} A Fuzzy Based Approach for New Product Concept Evaluation and Selection \\
+Autor(es): & Kamal, Amjad A and Sa’Ed, M \\
+Área de aplicación: & Evaluación y selección de nuevos productos.\\
+Técnica: & Aplicación de Fuzzy-AHP \\
+\hline
+\end{cuadro}
+Como se puede apreciar en el \refcuadro{tablaTrabajosRecientes}, éstos son algunos trabajos relacionados con la toma de decisiones en diferentes áreas aplicando el uso de ponderaciones difusas, donde se destaca el uso de similitud difusa, Fuzzy-AHP y Fuzzy-TOPSIS como técnicas representativas para sistemas de información multicriterio con atributos difusos. 
+Sin embargo se dificulta definir un método para seleccionar una técnica adecuada que permita realizar la toma de decisiones multicriterio en el área de proyectos de aplicaciones móviles, debido a las diferentes perspectivas de solución presentes en cada método anteriormente mencionado. Dada la necesidad planteada en ésta investigación respecto a la selección de proyectos de aplicaciones móviles, mediante un algoritmo que permita la clasificación de proyectos con múltiples atributos difusos y con uno o varios decisores; se hace necesario diseñar un algoritmo decisor adecuado para el  área de estudio. Por ende, surge la pregunta principal:
+\begin{itemize}
+\item[] \textit{ ¿Es posible diseñar un algoritmo decisor basado en lógica difusa  para hacer más efectiva la selección de proyectos de aplicaciones  móviles?}
+
+\end{itemize}
+\\
+Y como consecuencia  surgen las siguientes interrogantes:
+\begin{viñetas}
+\item \textit{¿Cuáles criterios son utilizados para la selección de proyectos de aplicaciones  móviles?}
+\item \textit{¿Cuáles tareas deben realizarse para la selección de proyectos de aplicaciones móviles que utilicen criterios imprecisos en su evaluación?}
+\item \textit{¿Cómo se elaboraría un algoritmo que permita automatizar las tareas?}
+\item \textit{¿El algoritmo conformado cumple adecuadamente con la evaluación de criterios establecidos?}
+\\
+\end{viñetas}
+Este trabajo busca desarrollar un algoritmo idóneo para la toma de decisiones multicriterio basada en lógica difusa para la selección de proyectos de aplicaciones móviles, como principal aporte de esta investigación, capaz de realizar una apropiada propuesta de clasificación para proyectos basados en criterios linealmente independientes, que permitan la clasificación de proyectos mediante el uso de sistemas de información de múltiples criterios difusos logrando un nivel de confianza determinado en la selección de proyectos de dicha naturaleza. El algoritmo de clasificación será desarrollado con el fin de determinar los criterios pertinentes y alternativas de decisión, unificar medidas numéricas a la importancia relativa de los criterios y el impacto de las alternativas de decisión sobre estos criterios, además de procesar los valores numéricos para precisar una clasificación de las alternativas de decisión. Dicho algoritmo podrá utilizarse para evaluar o seleccionar un número finito de alternativas de decisión, en el que se requiere la clasificación de las alternativas que están conformadas por variables difusas.
+
+
+\seccion{Objetivos}
+	\subseccion{Objetivos Generales}
+	Desarrollar un algoritmo basado en lógica difusa para seleccionar proyectos de aplicaciones  móviles utilizando criterios imprecisos que permita mejorar el uso de recursos en una organización.
+
+	\subseccion{Objetivos Específicos}
+	\begin{enumeracion}
+		\item Determinar los criterios utilizados para la selección de proyectos de aplicaciones  móviles.
+		\item Establecer las tareas para la selección de proyectos de aplicaciones móviles utilizando criterios imprecisos. 
+		\item Diseñar un algoritmo que permita automatizar las tareas para seleccionar  proyectos de aplicaciones móviles utilizando criterios imprecisos con base en la lógica difusa.
+		\item Probar el algoritmo diseñado a través de la solución de un caso de estudio.
+	\end{enumeracion}
+
+
+\seccion{Justificación e Importancia}
+La investigación descrita se justifica por el impacto en lo económico y en la eficiencia gerencial que supone una herramienta informática de apoyo a la toma de decisiones en la selección de nuevos proyectos de aplicaciones móviles.  La organización de desarrollo de software será la principal beneficiada, realizando mejores prácticas empresariales asociadas a la selección de proyectos de aplicaciones móviles.
+Con la implementación de este algoritmo, se podrá hacer una mejor valoración de los proyectos y por lo tanto una mejor selección de los mismos, reduciendo la ambigüedad que puede conllevar la información de sus características enmarcadas como nuevos productos y en consecuencia, un uso más eficiente de recursos de la empresa, tiempo y dinero.
+\seccion{Alcance}
+El trabajo de investigación a realizar se orientará en primer lugar, al proceso de análisis y selección de criterios necesarios en la evaluación de proyectos de aplicaciones móviles, donde se tomarán en cuenta los requerimientos relacionados con el desarrollo de aplicaciones para dispositivos móviles, determinando las tareas necesarias para evaluarlas. Este proceso se divide en dos etapas principales: a) determinación de pesos relativos a criterios y subcriterios; b) agregación de ponderaciones para los mismos. Se utilizarán métodos y criterios que puedan implementarse eficazmente en sistemas computarizados de apoyo a la toma de decisiones.\\ 
+\\
+Estas características de evaluación multicriterio harán parte del algoritmo basado en lógica difusa a desarrollar.  En este proceso se definirá tanto los métodos, como las ponderaciones necesarias para cada criterio, así como también la forma de sugerir una posible selección de proyectos.\\
+\\
+Finalmente, se evaluará la efectividad del algoritmo, aplicándolo a un problema de clasificación para proyectos de aplicaciones móviles, basándose en las necesidades actuales del mercado, donde se tendrán en cuenta las principales plataformas existentes (Android, iOS, Windows Phone).

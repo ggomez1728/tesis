@@ -1,0 +1,17 @@
+ x = -0.1:0.2:80.;
+ params = [-3 0 5 10];
+ y1 = gauss2mf(x, params);
+ params = [-5 2 5 6];
+ y2 = gauss2mf(x-17, params);
+ params = [-15 5 20 50];
+ y3 = gauss2mf(x-30, params);
+ figure('NumberTitle', 'off', 'Name', 'gauss2mf demo');
+ plot(x, y1, 'b;Frias;', 'LineWidth', 2);
+ hold on ;
+ plot(x, y2, 'y;Normales;', 'LineWidth', 2);
+ hold on ;
+ plot(x, y3, 'r;Calientes;', 'LineWidth', 2);
+ ylim([-0.1 1.1]);
+ xlabel('Grados Centigrados', 'FontWeight', 'bold');
+ ylabel('Grado de pertenencia', 'FontWeight', 'bold');
+ grid;

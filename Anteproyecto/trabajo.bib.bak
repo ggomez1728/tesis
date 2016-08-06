@@ -1,0 +1,42 @@
+ @inproceedings{jailani2015usability,
+  title={Usability guidelines for developing mobile application in the construction industry},
+  author={Jailani, Norleyza and Abdullah, Zuraidah and Bakar, Marini Abu and Haron, Harni Rohaida},
+  booktitle={Electrical Engineering and Informatics (ICEEI), 2015 International Conference on},
+  pages={411--416},
+  year={2015},
+  organization={IEEE}
+}
+@inproceedings{wasserman2010software,
+  title={Software engineering issues for mobile application development},
+  author={Wasserman, Anthony I},
+  booktitle={Proceedings of the FSE/SDP workshop on Future of software engineering research},
+  pages={397--400},
+  year={2010},
+  organization={ACM}
+}
+@article{albar2013investigation,
+  title={An Investigation of Fast and Frugal Heuristics for New Product Project Selection},
+  author={Albar, Fatima Mohammed},
+  year={2013}
+}
+@book{schilling2008direccion,
+  title={Direcci{\'o}n estrat{\'e}gica de la innovaci{\'o}n tecnol{\'o}gica},
+  author={Schilling, Melissa A and Mart{\'\i}nez, Francisco Javier Forcadell},
+  year={2008},
+  publisher={McGraw-Hill}
+}
+@article{bergvall2013future,
+  title={‘The future’s bright, the future’s mobile’: a study of Apple and Google mobile application developers},
+  author={Bergvall-K{\aa}reborn, Birgitta and Howcroft, Debra},
+  journal={Work, Employment \& Society},
+  pages={0950017012474709},
+  year={2013},
+  publisher={SAGE Publications}
+}
+@online{VisionMobile2014,
+  title={Developer Economics Q1.},
+  author={LTD VisionMobile},
+  year = 2014,
+  url = {https://www.developereconomics.com/reports/q1-2014/},
+  urldate = {2016-02-12}
+}

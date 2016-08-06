@@ -1,17 +1,12 @@
 \documentclass{uclamsc}
 
 \includeonly{
-      capitulos/dedicatoria, 
-      capitulos/agradecimientos, 
+      capitulos/cv-tutor,
       capitulos/introduccion, 
       capitulos/el-problema, 
       capitulos/marco-teorico, 
       capitulos/marco-metodologico, 
-      capitulos/resultados,
-      capitulos/discusion,
-      capitulos/conclusiones,
-      capitulos/recomendaciones,
-      capitulos/anexos
+	  capitulos/aspectos-administrativos,
 }
 
 % \habilitarpendientes	
@@ -20,29 +15,28 @@
 \bibliografia{trabajo}
 
 % Sobre el autor
- \autor{German Gomez}
-% \citarcomo{}
+\autor{Germán A. Gómez}
+\citarcomo{Gómez}
 
 % Sobre el trabajo
- \titulo{Mi trabajo}
-% \title{}
-% \palabrasclave{}
-% \keywords{}
-% \grado{}
+\titulo{ALGORITMO BASADO EN LÓGICA DIFUSA PARA SELECCIONAR  PROYECTOS DE APLICACIONES MÓVILES UTILIZANDO CRITERIOS IMPRECISOS}
+% \title{mi trabajo}
+\palabrasclave{algoritmo, lógica difusa, selección de proyectos, aplicaciones móviles, criterios imprecisos, conjuntos difusos.}% \keywords{}
+\grado{Magister Scientiarum}
 
 % Sobre la universidad
-% \decanato{}
-% \postgrado{}
-
+\decanato{DE CIENCIAS Y TECNOLOGÍA}
+\postgrado{MAESTRÍA EN CIENCIAS DE LA COMPUTACIÓN MENCIÓN INTELIGENCIA ARTIFICIAL}
+	
 % Sobre el tutor
-% \tutor{}
+\tutor{Msc. Carlos I. Lameda Montero}
 
 % Sobre la defensa
-% \ciudad{}
+\ciudad{Barquisimeto}
 % \diadefensa{}
 % \mesdefensa{}
 % \monthdefensa{}
-% \annodefensa{}
+\annodefensa{Mayo 2016}
 % \primerjurado{}
 % \segundojurado{}	
 
@@ -59,12 +53,9 @@
 \begin{preliminares}
 	\hacercaratula
 	\hacerpresentacion
-	\haceraprobacion
-	\include{capitulos/dedicatoria}
-	\include{capitulos/agradecimientos}
 	\hacerindices
+	\include{capitulos/cv-tutor}
 	\hacerresumen
-	\hacerabstract
 \end{preliminares}
 
 \begin{contenido}
@@ -72,16 +63,10 @@
 	\include{capitulos/el-problema}
 	\include{capitulos/marco-teorico}
 	\include{capitulos/marco-metodologico}
-	\include{capitulos/resultados}
-	\include{capitulos/discusion}
-	\include{capitulos/conclusiones}
-	\include{capitulos/recomendaciones}
+	\include{capitulos/aspectos-administrativos}
 \end{contenido}
 
 \hacerbibliografia
 
-\begin{anexos}
-	\include{capitulos/anexos}
-\end{anexos}
 	
 \end{document}	
