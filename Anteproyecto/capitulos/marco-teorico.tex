@@ -31,7 +31,7 @@ A continuación se presentan algunos de los criterios tomados en cuenta en la in
 \item Costo de la plataforma, modelo de licencia y mantenimiento.
 \\
 \end{viñetas}
-El autor en su investigación se encarga de hacer una comparación de las características a tomar en cuenta al seleccionar una tecnología o plataforma de desarrollo híbrida, como es el caso de Xamarin, Phone-gap y Appcelerator  siendo este contenido de gran aporte para la identificar criterios desde una nueva perspectiva en la evaluación de proyectos de aplicaciones móviles. Uno de los aportes importantes de este trabajo de grado será la incorporación de las dos visiones de desarrollo ---plataformas de desarrollo nativas e híbridas--- dando una visión más global de las características presentes en este mercado.\\
+El autor en su investigación se encarga de hacer una comparación de las características a tomar en cuenta al seleccionar una tecnología o plataforma de desarrollo híbrida, como es el caso de Xamarin, Phone-gap y Appcelerator  siendo este contenido de gran aporte para identificar criterios desde una nueva perspectiva en la evaluación de proyectos de aplicaciones móviles. Uno de los aportes importantes de este trabajo de grado será la incorporación de las dos visiones de desarrollo ---plataformas de desarrollo nativas e híbridas--- dando una visión más global de las características presentes en este mercado.\\
 \\
 Para realizar una comparación y posterior selección entre los distintos proyectos de aplicaciones móviles, no solo es necesaria la caracterización del problema, también es requerido el contar con formas de análisis y evaluación de dichos proyectos. \citet{bashon2013framework}, en su investigación titulada “A framework for comparing heterogeneous objects: on the similarity measurements for fuzzy, numerical and categorical attributes”, presentan un método de medición de similitud que combina enfoques clásicos (por ejemplo numérico, categórico) y  difusos, para  hacer la comparación de objetos que tengan diferentes tipos de datos.\\
 \\
@@ -62,7 +62,7 @@ Se presenta a continuación una serie de conceptos asociados al desarrollo de un
 \subseccion{Conjuntos difusos y lógica difusa}
 De acuerdo con la teoría clásica de conjuntos, un elemento o pertenece a un conjunto, o se encuentra fuera del conjunto. No existe la situación intermedia. No existe un elemento con pertenencia parcial a un conjunto. Un ejemplo de esta situación es la estatura de una persona. De acuerdo con la lógica clásica se considera que una persona es alta a partir de determinada estatura, por ejemplo $1,80 m.$; lo que, según esa dicotomía puede llevar a calificar de baja a una persona de $1.79 m.$ En cambio, según la teoría de conjuntos borrosos, puede existir un elemento con una pertenencia parcial a un conjunto. Si un elemento es parcialmente miembro de un conjunto, también es parcialmente no miembro del mismo conjunto. Dado que la teoría de conjuntos difusos permite la pertenencia gradual de un elemento a un conjunto, puede considerarse como una generalización de la teoría clásica de conjuntos \cite[]{negnevitsky2005artificial, zadeh2008there}.\\
 \\
-Los conjuntos difusos fueron propuestos originalmente para hacer frente a los problemas de incertidumbre subjetiva. La incertidumbre subjetiva como resultado del uso de variables lingüísticas para representar un problema o  evento. Se debe tener en cuenta que una variable lingüística es una variable que se expresa por medio de palabras o frases verbales en un lenguaje natural o artificial. Por ejemplo, las variables lingüísticas con números difusos triangulares pueden tomar valores como ``muy bueno'', ``buen'', ``regular'', ``malo'', y ``muy malo'', como se muestra en el \refgrafico{graficoVariables}, para indicar las funciones de pertenencia de los valores de expresión.
+Los conjuntos difusos fueron propuestos originalmente para hacer frente a los problemas de incertidumbre subjetiva. La incertidumbre subjetiva como resultado del uso de variables lingüísticas para representar un problema o  evento. Se debe tener en cuenta que una variable lingüística es una variable que se expresa por medio de palabras o frases verbales en un lenguaje natural o artificial. Por ejemplo, las variables lingüísticas con números difusos triangulares pueden tomar valores como ``muy bueno'', ``bueno'', ``regular'', ``malo'', y ``muy malo'', como se muestra en el \refgrafico{graficoVariables}, para indicar las funciones de pertenencia de los valores de expresión.
 \begin{grafico}[titulo = Función de pertenencia de algunas variables lingüísticas, etiqueta=graficoVariables]
 \includegraphics[width=15cm]{graficas/variables.jpg}
 \end{grafico}
@@ -154,7 +154,7 @@ Una variable lingüística \cite[]{zadeh1975concept} es una $5-upla(x, T_{x}, U,
 \item $T_{x}$ es el conjunto de términos lingüísticos referidos a la variable $x$.
 \item $U$ es el universo del discurso en el contexto de la variable $x$.
 \item $G$ es una regla sintáctica para generar los nombres de valores de $x$. 
-\item $M: \rightarrow \F (U)$ es la regla semántica que asigna a cada término lingüístico $t \in T_{x}$ su significado. $M(t) \in \F (U)$, siendo $\F (U)$ la familia de conjuntos borrosos en $r$.
+\item $M: \rightarrow \F (U)$ es la regla semántica que asigna a cada término lingüístico $t \in T_{x}$ su significado. $M(t) \in \F (U)$, siendo $\F (U)$ la familia de conjuntos borrosos en $\mathbb{R}$.
 \end{viñetas}
 
 \subseccion{Medidas de comparación entre conjuntos borrosos}
@@ -163,7 +163,7 @@ Una variable lingüística \cite[]{zadeh1975concept} es una $5-upla(x, T_{x}, U,
 A continuación, se hace una descripción de medidas de similitud entre conjuntos borrosos para cada una de estas clases.
 
 \subseccion{Comparación de Objetos con Atributos Difusos}
-La comparación y descripción de objetos es una operación habitual en muchos dominios: psicología, analogía, ciencias físicas, procesador de imágenes, agrupamiento (``clustering''), razonamiento deductivo, razonamientos basados en casos, entre otros campos. Estas comparaciones frecuentemente se basan en medidas que intentan determinar qué puntos tienen en común ambos objetos, es decir, medidas de similitud \cite[]{bouchon2008similarities}.\\
+La comparación y descripción de objetos es una operación habitual en muchos dominios: psicología, analogía, ciencias físicas, procesamiento de imágenes, agrupamiento (``clustering''), razonamiento deductivo, razonamientos basados en casos, entre otros campos. Estas comparaciones frecuentemente se basan en medidas que intentan determinar qué puntos tienen en común ambos objetos, es decir, medidas de similitud \cite[]{bouchon2008similarities}.\\
 \\
 La comparación de objetos con descripciones imperfectas, afectadas con imprecisiones e inexactitudes, puede ser tratada utilizando conjuntos borrosos para representar tales descripciones.
 
@@ -179,7 +179,7 @@ En general, tres tipos de análisis formal pueden emplearse para resolver proble
 \end{viñetas}
 La toma de decisiones es muy intuitiva al considerar los problemas de un criterio único, ya que sólo hay que elegir la alternativa con la calificación de preferencia más alta. Sin embargo, cuando el DM evalúa alternativas con múltiples criterios, aparecen muchos problemas, tales como los pesos de los criterios de preferencia, la dependencia, y los conflictos entre los criterios, parecen complicar los problemas y necesitan ser superadas por métodos más sofisticados.\\
 \\
-Con el fin de hacer frente a los problemas MCDM, el primer paso es averiguar cuántos atributos o criterios existen en el problema y la forma de entender los problemas (es decir, la identificación de los problemas). A continuación, se debe recolectar los datos o informaciones adecuadas en las que las preferencias de DM se pueden reflejar correctamente (es decir, la construcción de las preferencias). Continuando con la construcción de un conjunto de posibles alternativas o estrategias con el fin de garantizar que se alcance el objetivo (es decir, la evaluación de las alternativas). Finalmente se selecciona un método apropiado para ayudar a evaluar y posicionar las alternativas o estrategias (es decir, encontrar y determinar la mejor alternativa).\\
+Con el fin de hacer frente a los problemas MCDM, el primer paso es averiguar cuántos atributos o criterios existen en el problema y la forma de entender los problemas (es decir, la identificación de los problemas). A continuación, se debe recolectar los datos o informaciones adecuadas en las que las preferencias de DM se pueden reflejar correctamente (es decir, la construcción de las preferencias).  Posteriormente se requiere construir un conjunto de posibles alternativas o estrategias con el fin de garantizar que se alcance el objetivo (es decir, la evaluación de las alternativas). Finalmente se selecciona un método apropiado para ayudar a evaluar y posicionar las alternativas o estrategias (es decir, encontrar y determinar la mejor alternativa).\\
 \\
 A continuación se presentan algunos métodos para la evaluación de sistemas de información: 
 
@@ -191,7 +191,7 @@ Más de un atributo puede ser comparado entre dos casos. El algoritmo aplicado c
 Donde $S_{M_{i}}$ es la $i-ésima$ medida local de similitud, y $w_{i}$ es un factor de peso asociado con la $i-ésima$ medida local de similitud que es proporcional a la importancia relativa que se le asigne al atributo relacionado.
 
 \subsubseccion{Proceso Analítico Jerárquico (AHP)}
-Es una técnica estructurada para tratar con decisiones complejas. En lugar de prescribir la decisión “correcta”, el AHP ayuda a los decisores a encontrar la solución que mejor se ajusta a sus necesidades y a su comprensión del problema. \citet{bernoulli1783sammlung} propuso el concepto de función de utilidad para reflejar búsqueda humana, como la máxima satisfacción, \citet{neumann1947theory}  presentaron la teoría del juego y modelo de comportamiento económico, que amplió los estudios sobre los  problemas del  comportamiento económico humano para la Toma de Decisiones con Atributos Múltiples (MADM), una cantidad cada vez mayor de la literatura se ha dedicado a este campo. En términos generales, los procedimientos de MADM pueden resumirse en seis pasos a saber \cite[]{dubois1980systems}:
+Es una técnica estructurada para tratar con decisiones complejas. En lugar de prescribir la decisión “correcta”, el AHP ayuda a los decisores a encontrar la solución que mejor se ajusta a sus necesidades y a su comprensión del problema. \citet{bernoulli1783sammlung} propuso el concepto de función de utilidad para reflejar búsqueda humana, como la máxima satisfacción, \citet{neumann1947theory}  presentaron la teoría del juego y modelo de comportamiento económico, que amplió los estudios sobre los  problemas del  comportamiento económico humano para la Toma de Decisiones con Atributos Múltiples (“Multiple Attribute Decision Making”, MADM), una cantidad cada vez mayor de la literatura se ha dedicado a este campo. En términos generales, los procedimientos de MADM pueden resumirse en seis pasos a saber \cite[]{dubois1980systems}:
 \begin{viñetas}
 \item \textbf{Paso 1:} Definir la naturaleza del problema.
 \item \textbf{Paso 2:} Construir un sistema jerárquico para su evaluación (gráfica). 
@@ -208,35 +208,35 @@ AHP fue propuesto por \citet{saaty1977scaling} para modelar los procesos de toma
 \includegraphics[width=15cm]{graficas/AHP.png}
 \end{grafico}
 \subsubseccion{Escala de proporción en el AHP}El \refcuadro{tablaEscalaAHP} representa la escala de índices que se emplea para comparar el peso entre los criterios de importancia de acuerdo con el significado lingüístico de 1 a 9 para denotar desde la misma importancia(1) a la extrema importancia(9).
-\begin{cuadro}[titulo= Escala de proporción en el AHP, etiqueta = tablaEscalaAHP]{|p{1.8cm}|c|c|c|c|c|p{2cm}|}
+\begin{cuadro}[titulo= Escala de proporción en el AHP, etiqueta=tablaEscalaAHP]{|p{1.8cm}|c|c|c|c|c|p{2cm}|}
 \hline
 Intensidad  & 1 & 3 & 5 & 7 & 9 & 2,4,6,8 \\
 \hline
 Termino lingüístico & Igual & Moderada & Fuerte & Demostrada & Extrema & Valores intermedios \\
 \hline
 \end{cuadro}
-Además, con el fin de garantizar la coherencia de la percepción subjetiva y la exactitud de los pesos comparativos, se sugieren dos índices, el índice de consistencia (C.I.) y la relación de la consistencia (C. R.). La ecuación del C.I. se puede expresar como:
+Además, con el fin de garantizar la coherencia de la percepción subjetiva y la exactitud de los pesos comparativos, se sugieren dos índices, el índice de consistencia (“Consistency Index”, $CI$) y el radio de consistencia (“Consistency Ratio” , $CR$). La ecuación del $CI$ se puede expresar como:
 \begin{ecuacion}{ecuacionCI}
 C.I.=\cfrac { (\mu _{ \max}-n)}{(n-1)}
 \end{ecuacion}
-Donde $\mu _{ \max}$ es el valor propio más grande, y $n$	 representa los números de los atributos. \citet{saaty1980analytic} sugirió que el valor del $C.I.$ no debe exceder de $0,1$ para un resultado de confianza. Por otro lado, la $C.R.$ se puede calcular como:
+Donde $\mu_{ \max}$ es el valor propio más grande, y $n$	 representa los números de los atributos. \citet{saaty1980analytic} sugirió que el valor del $CI$ no debe exceder de $0,1$ para un resultado confiable. Por otro lado, la $CR$ se puede calcular como:
 \begin{ecuacion}{ecuacionCR}
 C.R.=\cfrac {C.I.}{R.I.}
 \end{ecuacion}
-El $R.I.$ para diferentes tamaños matriciales.
-\begin{cuadro}[titulo= Escala de proporción en el AHP, etiqueta = tablaEscalaAHP]{|l|l|l|l|l|l|l|l|l|l|l|l|}
+El índice aleatorio (“Random Index”, $R.I.$) para diferentes tamaños matriciales se puede apreciar en el \refcuadro{tablaEscalaProporcionAHP}.
+\begin{cuadro}[titulo= Valor de RI para diferentes numeros de entradas(n) , etiqueta = tablaEscalaProporcionAHP]{|l|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
-$N.E.$ & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\
+$n$ & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\
 \hline
 R.I. &  0.52 & 0.89 & 1.11 & 1.25 & 1.35 & 1.40 & 1.45 & 1.49 & 1.51 & 1.54 & 1.56
   \\
 \hline
 \end{cuadro}
-El C. R. debe ser inferior a 0,1 para obtener un resultado fiable y 0,2 es el nivel máximo tolerado.\\
+El $C.R.$ debe ser inferior a 0,1 para obtener un resultado fiable y 0,2 es el nivel máximo tolerado.\\
 \\
 En las aplicaciones a menudo es conveniente trabajar con números difusos triangulares debido a su simplicidad computacional y son útiles en la promoción de la representación y tratamiento de la información en un entorno difusa. 
 \subsubseccion{Integración de AHP con los conjuntos difusos}
-La metodología AHP Difusa considera la incorporación de números difusos, donde por conveniencia se utilizan números difusos triangulares (``Triangular Fuzzy Numbers'' ,TFN) debido a su simplicidad computacional. Inicialmente utiliza los números difusos para indicar el nivel de intensidad o importancia relativa que un factor de la jerarquía tiene por sobre otro. A partir de estas comparaciones se construye la matriz de comparaciones con números triangulares.
+La metodología AHP Difusa considera la incorporación de números difusos, donde por conveniencia se utilizan números difusos triangulares (``Triangular Fuzzy Numbers'' ,TFN) debido a su simplicidad computacional. Inicialmente utiliza los números difusos para indicar el nivel 	de intensidad o importancia relativa que un factor de la jerarquía tiene por sobre otro. A partir de estas comparaciones se construye la matriz de comparaciones con números triangulares.
 \begin{ecuacion}{ecuacionMatriz}
 \tilde { A } = \begin{bmatrix} 1 & \tilde { { a } }_{ 12 }  & ... & \tilde { { a } }_{ 1n }  \\ \tilde { { a } }_{ 21 }  & 1 & ... & \tilde { { a }}_{ 2n }   \\ ... & ... & ... & ... \\ \tilde { { a } }_{ n1 }  & ... & ... & 1 \end{bmatrix}
 \end{ecuacion}
@@ -278,7 +278,7 @@ Calcular la cercanía relativa a la solución ideal. La proximidad relativa de l
 \end{ecuacion}
 Desde $d_{i} \geq 0$  y  $d_{i} \geq 0$ , entonces claramente, $R_{i}\in [0,1]$.\\
 \\
-La clasificar las alternativas utilizando este índice, permite ordenar las alternativas respecto a las preferencias en forma descendiente, el principio básico del método TOPSIS es que la alternativa elegida debe tener la ``distancia más corta'' de la solución ideal positiva y el ``distancia más lejana'' de la solución ideal negativa.
+Clasificar las alternativas utilizando este índice, permite el ordenamiento de las mismas respecto a las preferencias en forma descendente.  El principio básico del método TOPSIS es que la alternativa elegida debe tener la ``distancia más corta'' de la solución ideal positiva y el ``distancia más lejana'' de la solución ideal negativa.
 \subseccion{Aplicaciones móviles y sus características}
 \citet{santiago2015mobile} definen a las aplicaciones móviles como aplicaciones informáticas diseñadas para ser ejecutada en teléfonos inteligentes, tabletas y otros dispositivos móviles y que permite a los usuarios efectuar una tarea concreta de cualquier tipo ---profesional, de ocio, educativas, de acceso a servicios, entre otras---, facilitando las gestiones o actividades a desarrollar.
 A nivel de programación, existen varias formas de desarrollar aplicaciones. Cada una de ellas tiene diferentes características y limitaciones, especialmente desde el punto de vista técnico.
